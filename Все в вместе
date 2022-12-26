@@ -1,0 +1,51 @@
+import math
+i = math.sqrt(-1) 
+
+class Complex(vsepodrayd):
+
+    def in(Complex, a, b):
+        'Создает комплексное число'
+        a = 0
+        b = 0
+        return(Complex, a, b) 
+
+
+    def str(Complex, a, b):
+        'В виде строки'
+        a = 0
+        b = 0
+        return str(a, b) 
+
+    def plus(self, comp):
+    'Комплексные числа(добовляем)'
+        a = self.a
+        b = self.b
+        c = comp.a
+        d = comp.b
+        real = a + c
+        im = b + d
+        return Complex(real, im)
+
+    def minus(self, comp):
+        'Минус(вычитание)'
+        a = self.a
+        b = self.b
+        c = comp.a
+        d = comp.b
+        real = a - c
+        im = b - d
+        return Complex(real, im)
+        
+        "**или self.x = (a + bi) - (c + di) = (a - c) + (b - d)i**"
+
+    def krest(self):
+        'Умножение'
+        self.x =  (a + bi) * (c + di) = (ac - bd) + (bc + ad)i
+
+    def delenie(self):
+        'Деление'
+        self.x =  (a + bi) / (c + di) = (ac + bd)/(c**2 + d**2) + (bc - ad)i/(c**2 + d**2)
+
+    def absolyt(self):
+        'Абсолют'
+        self.x = math.sqrt(a**2 + b**2)
