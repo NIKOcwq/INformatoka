@@ -1,0 +1,4 @@
+def koren(a, b):
+    nthRootOfr = abs(a)**(1.0/b)
+    c = phase(a)
+    return map(lambda k: nthRootOfr*exp((t+2*k*pi)*1j/b), range(b))
